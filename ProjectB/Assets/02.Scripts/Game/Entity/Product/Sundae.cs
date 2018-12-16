@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SceneManager : MonoBehaviour {
+public class Sundae : ProductBase {
 
 	// Use this for initialization
 	void Start () {

@@ -4,7 +4,8 @@ using UnityEngine;
 
 public enum E_CharacterType
 {
-    MrBunSik,
-    Guest1,
-    Guest2
+    Player,
+    NormalGuest,
+    SpecialGuest,
+    TakeOutGuest
 };

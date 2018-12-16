@@ -1,23 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    private static GameManager Instance = null;
 
-    private void OnCollisionEnter(Collision collision)
+    public static GameManager GetInstance()
     {
-        
+        if (Instance == null)
+        {
+            Instance = new GameManager();
+        }
+        return Instance;
     }
 
-    //void SpawnGuest()
+    /** 씬을 바꾼다 */
+    public void ChangeScene(int InSceneNum)
+    {
+        SceneManager.LoadSceneAsync(InSceneNum, LoadSceneMode.Single);
+    }
 }
