@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ProductBase : MonoBehaviour {
+public class ProductBase : EntityBase
+{
 
 	// Use this for initialization
 	void Start () {
