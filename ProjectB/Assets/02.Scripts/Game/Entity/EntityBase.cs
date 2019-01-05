@@ -4,11 +4,8 @@ using UnityEngine;
 
 public class EntityBase : MonoBehaviour {
 
-    public GameObject EntityPrefeb;
-
 	// Use this for initialization
 	void Start () {
-		
 	}
 	
 	// Update is called once per frame

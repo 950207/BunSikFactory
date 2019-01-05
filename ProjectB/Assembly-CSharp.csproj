@@ -62,11 +62,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\02.Scripts\Game\Entity\Character\CharacterBase.cs" />
-    <Compile Include="Assets\02.Scripts\Game\Entity\Character\Define\CharacterType.cs" />
     <Compile Include="Assets\02.Scripts\Game\Entity\Character\Player.cs" />
+    <Compile Include="Assets\02.Scripts\Game\Entity\Define\EntityType.cs" />
     <Compile Include="Assets\02.Scripts\Game\Entity\EntityBase.cs" />
     <Compile Include="Assets\02.Scripts\Game\Entity\EntityManager.cs" />
-    <Compile Include="Assets\02.Scripts\Game\Entity\Product\Define\ProductType.cs" />
     <Compile Include="Assets\02.Scripts\Game\Entity\Product\Odeng.cs" />
     <Compile Include="Assets\02.Scripts\Game\Entity\Product\ProductBase.cs" />
     <Compile Include="Assets\02.Scripts\Game\Entity\Product\Sundae.cs" />

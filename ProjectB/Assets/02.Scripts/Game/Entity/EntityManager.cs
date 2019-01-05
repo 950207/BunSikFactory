@@ -44,44 +44,20 @@ public class EntityManager : MonoBehaviour
         return Entity;
     }
 
-    public void CreatePlayer()
-    {
-        SpawnCharacter(E_CharacterType.Player);
-    }
-
     /** 캐릭터 타입별 스폰 */
-    public void SpawnCharacter(E_CharacterType InCharacterType)
+    public void SpawnEntity(E_EntityType InEntityType)
     {
         EntityBase Entity = null;
-        switch(InCharacterType)
+        switch(InEntityType)
         {
-            case E_CharacterType.Player:
+            case E_EntityType.Player:
                 break;
-            case E_CharacterType.NormalGuest:
+            case E_EntityType.Guest:
                 break;
-            case E_CharacterType.SpecialGuest:
+            case E_EntityType.Food:
                 break;
-            case E_CharacterType.TakeOutGuest:
+            case E_EntityType.Structure:
                 break;
         }
-        if (!Entity)
-            EntityList.Add(12, Entity);
-    }
-
-    /** 음식 타입별 스폰 */
-    public void SpawnFood(E_ProductType InProductType)
-    {
-        EntityBase Entity = null;
-        switch (InProductType)
-        {
-            case E_ProductType.TteokBokki:
-                break;
-            case E_ProductType.Sundae:
-                break;
-            case E_ProductType.Odeng:
-                break;
-        }
-        if (!Entity)
-            EntityList.Add(12, Entity);
     }
 }
