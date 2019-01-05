@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Odeng : ProductBase {
-
+public class Food : ProductBase
+{
 	// Use this for initialization
 	void Start () {
 		

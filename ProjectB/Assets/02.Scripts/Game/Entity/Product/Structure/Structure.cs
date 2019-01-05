@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Sundae : ProductBase {
-
+public class Structure : ProductBase
+{
 	// Use this for initialization
 	void Start () {
 		

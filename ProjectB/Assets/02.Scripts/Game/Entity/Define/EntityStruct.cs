@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TteckBokki : ProductBase
-{
+public class EntityStruct : MonoBehaviour {
+
 	// Use this for initialization
 	void Start () {
 		
@@ -11,5 +11,6 @@ public class TteckBokki : ProductBase
 	
 	// Update is called once per frame
 	void Update () {
+		
 	}
 }
