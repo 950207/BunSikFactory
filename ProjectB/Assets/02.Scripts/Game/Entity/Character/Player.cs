@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Player : CharacterBase {
 
+    public float TouchGauge { get; set; }
+    
 	// Use this for initialization
 	void Start () {
 		
