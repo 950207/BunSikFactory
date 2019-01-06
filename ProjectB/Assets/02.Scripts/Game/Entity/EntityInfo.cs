@@ -11,7 +11,8 @@ public class EntityInfo
     public int EntityTID { get; set; }
     /** 엔티티 타입 */
     public E_EntityType EntityType { get; set; }
-
+    /** 엔티티 스프라이트*/
+    public Sprite EntitySprite { get; set; }
     
     public void SetInfo(E_EntityType Type, int InEntityTID)
     {
