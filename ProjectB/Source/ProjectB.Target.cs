@@ -1,13 +1,14 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Fill out your copyright notice in the Description page of Project Settings.
 
 using UnrealBuildTool;
 using System.Collections.Generic;
 
 public class ProjectBTarget : TargetRules
 {
-    public ProjectBTarget(TargetInfo Target) : base(Target)
+	public ProjectBTarget(TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Game;
-		ExtraModuleNames.Add("ProjectB");
+
+		ExtraModuleNames.AddRange( new string[] { "ProjectB" } );
 	}
 }
