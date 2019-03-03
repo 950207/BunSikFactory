@@ -19,8 +19,9 @@ class PROJECTB_API UDBHelper : public UObject
 	UDBHelper();
 
 public:
-	static const FLevel_Table* GetLevelData(int32 InLevel);
-
-public:
-	static TMap<int32, FLevel_Table*> LevelDataMap;
+	static TMap<int32, FLevel_Table*> LevelMap;
+	static TMap<int32, FConfig_Table*> ConfigMap;
+	static TMap<int32, FItem_Table*> ItemMap;
+	static TMap<int32, FFactory_Table*> FactoryMap;
+	static TMap<int32, FMenu_Table*> MenuMap;
 };
