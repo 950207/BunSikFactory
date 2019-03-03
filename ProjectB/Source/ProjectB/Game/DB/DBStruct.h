@@ -44,6 +44,9 @@ public:
 	int32 TID;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Data|Menu")
+	E_MenuType MenuType;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Data|Menu")
 	int32 FactoryLevel;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Data|Menu")

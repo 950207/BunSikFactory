@@ -11,23 +11,23 @@
 UENUM(BlueprintType)
 enum class E_MenuType : uint8
 {
-	TTEOKBOKKI = 0,
-	FISHCAKE = 1,
-	SUNDAE = 2,
-	KIMBAB = 3,
-	AUTO = 4,
+	Tteokbokki = 0,
+	Fishcake = 1,
+	Sundae = 2,
+	Kimbab = 3,
+	Auto = 4,
 };
 
 UENUM(BlueprintType)
 enum class E_FactoryType : uint8
 {
-	MENU = 0,
-	AUTO = 1,
+	Menu = 0,
+	Auto = 1,
 };
 
 UENUM(BlueprintType)
 enum class E_EffectType : uint8
 {
-	REDUCE_TIME = 0,
-	INCREASE_EARN = 1,
+	Reduce_Time = 0,
+	Increase_Earn =1,
 };
