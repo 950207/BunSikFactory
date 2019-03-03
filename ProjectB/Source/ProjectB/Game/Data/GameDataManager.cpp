@@ -11,15 +11,15 @@ void UGameDataManager::EnterInGame()
 	for (const auto& MenuTable : UDBHelper::MenuMap)
 	{
 		UMenuEntity* MenuEntity = NewObject<UMenuEntity>();
-		MenuEntity->TID = MenuTable.Value->TID;
-		MenuEntityList.Add(MenuEntity->TID, MenuEntity);
+		MenuEntity->MenuTable = *MenuTable.Value;
+		MenuEntityList.Add(MenuTable.Value->TID, MenuEntity);
 	}
 
 	for (const auto& FactoryTable : UDBHelper::FactoryMap)
 	{
 		UFactoryEntity* FactoryEntity = NewObject<UFactoryEntity>();
-		FactoryEntity->TID = FactoryTable.Value->TID;
-		FactoryEntityList.Add(FactoryEntity->TID, FactoryEntity);
+		FactoryEntity->FactoryTable = *FactoryTable.Value;
+		FactoryEntityList.Add(FactoryTable.Value->TID, FactoryEntity);
 	}
 }
 
