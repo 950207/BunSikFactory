@@ -21,6 +21,6 @@ class PROJECTB_API UDBHelper : public UObject
 public:
 	static const FLevel_Table* GetLevelData(int32 InLevel);
 
-protected:
+public:
 	static TMap<int32, FLevel_Table*> LevelDataMap;
 };

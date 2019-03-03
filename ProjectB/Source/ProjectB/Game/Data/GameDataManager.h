@@ -3,29 +3,31 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Util/SingletonBase.h"
 #include "Game/Data/Define/GameDataStruct.h"
 #include "UObject/NoExportTypes.h"
 #include "GameDataManager.generated.h"
 
+#define GameDataManager UGameDataManager::Get()
+
 /**
  * 
  */
+
+struct FLevel_Table;
+
 UCLASS()
-class PROJECTB_API UGameDataManager : public UObject
+class PROJECTB_API UGameDataManager : public UObject, public TGameTimeSingletonObject<UGameDataManager>
 {
 	GENERATED_BODY()
 
 private:
-	UPROPERTY()
 	TMap<int32, FMenuData> MenuDataList;
-
-	UPROPERTY()
 	TMap<int32, FFactoryData> FactoryDataList;
 
 public:
-	/** 초기화 */
-	UFUNCTION(BlueprintCallable)
-	void Initialize();
+	virtual void EnterInGame() override;
+	virtual void LeaveInGame() override;
 
 public:
 	/** 메뉴 데이터 얻어오기 */

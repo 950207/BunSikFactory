@@ -16,6 +16,6 @@ class PROJECTB_API UGameDataBlueprintLibrary : public UBlueprintFunctionLibrary
 	GENERATED_BODY()
 	
 public:
-	//UFUNCTION(BlueprintPure)
-	//static const TMap<int32, FMenuData>& GetMenuDataList();
+	UFUNCTION(BlueprintPure)
+	static const TMap<int32, FMenuData>& GetMenuDataList();
 };
