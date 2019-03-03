@@ -1,0 +1,6 @@
+﻿비고,TID,FactoryType,Name,Weight,Description
+떡볶이 공장,1,Menu,떡볶이 공장,1.1,
+어묵 공장,2,Menu,어묵 공장,1.2,
+순대 공장,3,Menu,순대 공장,1.3,
+김밥 공장,4,Menu,김밥 공장,1.4,
+자동화 공장,5,Auto,자동화 공장,1.5,
