@@ -3,7 +3,12 @@
 #include "GameDataBlueprintLibrary.h"
 #include "Game/Data/GameDataManager.h"
 
-const TMap<int32, FMenuData>& UGameDataBlueprintLibrary::GetMenuDataList()
+const TMap<int32, UMenuEntity*>& UGameDataBlueprintLibrary::GetMenuEntityList()
 {
-	return GameDataManager->GetMenuDataList();
+	return GameDataManager->GetMenuEntityList();
+}
+
+const TMap<int32, UFactoryEntity*>& UGameDataBlueprintLibrary::GetFactoryEntityList()
+{
+	return GameDataManager->GetFactoryEntityList();
 }

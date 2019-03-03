@@ -9,7 +9,7 @@ void UBGameInstance::Init()
 	UE_LOG(LogTemp, Warning, TEXT("게임 인스턴스 초기화 완료!"));
 
 	// 싱글톤 초기화는 여기에서.
-	UGameDataManager::Get();
+	UGameDataManager::Get()->EnterInGame();
 }
 
 void UBGameInstance::Shutdown()
@@ -18,5 +18,7 @@ void UBGameInstance::Shutdown()
 	UE_LOG(LogTemp, Warning, TEXT("게임 인스턴스 해제 완료!"));
 
 	// 싱글톤 해제는 여기에서.
-	GameDataManager->LeaveInGame();
+	UGameDataManager::Get()->LeaveInGame();
+	
+
 }

@@ -10,6 +10,10 @@
 /**
  * 
  */
+
+class UFactoryEntity;
+class UMenuEntity;
+
 UCLASS()
 class PROJECTB_API UGameDataBlueprintLibrary : public UBlueprintFunctionLibrary
 {
@@ -17,5 +21,8 @@ class PROJECTB_API UGameDataBlueprintLibrary : public UBlueprintFunctionLibrary
 	
 public:
 	UFUNCTION(BlueprintPure)
-	static const TMap<int32, FMenuData>& GetMenuDataList();
+	static const TMap<int32, UMenuEntity*>& GetMenuEntityList();
+
+	UFUNCTION(BlueprintPure)
+	static const TMap<int32, UFactoryEntity*>& GetFactoryEntityList();
 };

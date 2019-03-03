@@ -39,7 +39,6 @@ public:
 		{
 			Instance = NewObject<T>(T::StaticClass());
 			Instance->AddToRoot();
-			Instance->EnterInGame();
 		}
 		return Instance;
 	}

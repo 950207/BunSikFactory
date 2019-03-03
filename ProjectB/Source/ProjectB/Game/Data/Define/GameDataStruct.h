@@ -3,11 +3,19 @@
 #include "CoreMinimal.h"
 #include "GameDataStruct.generated.h"
 
+UENUM(BlueprintType)
+enum class E_FactoryState : uint8 
+{
+	None = 0,
+	Upgrading = 1
+};
+
 USTRUCT(BlueprintType)
-struct FMenuData
+struct FMenuInfo
 {
 	GENERATED_BODY()
 
+public:
 	UPROPERTY(BlueprintReadWrite, Category = "Menu")
 	int32 TID;
 	UPROPERTY(BlueprintReadWrite, Category = "Menu")
@@ -15,12 +23,15 @@ struct FMenuData
 };
 
 USTRUCT(BlueprintType)
-struct FFactoryData
+struct FFactoryInfo
 {
 	GENERATED_BODY()
 
+public:
 	UPROPERTY(BlueprintReadWrite, Category = "Factory")
 	int32 TID;
 	UPROPERTY(BlueprintReadWrite, Category = "Factory")
 	FString Name;
+	UPROPERTY(BlueprintReadWrite, Category = "Factory")
+	E_FactoryState State;
 };
