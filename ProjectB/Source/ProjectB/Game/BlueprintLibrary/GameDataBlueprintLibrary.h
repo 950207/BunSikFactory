@@ -5,6 +5,8 @@
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "Game/Data/Define/GameDataStruct.h"
+#include "Game/DB/DBStruct.h"
+#include "Game/DB/DBEnums.h"
 #include "GameDataBlueprintLibrary.generated.h"
 
 /**
@@ -25,4 +27,8 @@ public:
 
 	UFUNCTION(BlueprintPure)
 	static const TMap<int32, UFactoryEntity*>& GetFactoryEntityList();
+
+	UFUNCTION(BlueprintPure)
+	static const TArray<UMenuEntity*> GetMenuEntityListByMenuType(E_MenuType InMenuType);
+
 };
